@@ -1,0 +1,142 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="jumbotron-fluid" style="width:100%">
+        <div class="card img-fluid">
+            <img class="card-img-top" src="https://c0.wallpaperflare.com/preview/839/412/980/food-and-drink-pizza-pizzas-tomato.jpg" alt="image" style="width:100%;height:600px;" />
+            <div class="card-img-overlay text-white">
+                <br /><br /><br /><br />
+                <div class="card-body text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuA7hWlDPAIjBylyhB71V3JTPWABt_vXHNLg&usqp=CAU" style="width:300px;height:100px;" /><br /><br />
+                <h1>Discover the best food & drinks in Pune</h1><br /><br />
+                   @* <a class="nav-link" style="color:white;1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue" asp-area="Demo" asp-controller="Home" asp-action="Menu"><h1>Explore Menu</h1></a>*@
+                    <a class="nav-link" style="color:white;1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue" asp-area="RestaurantMgmt" asp-controller="Customers" asp-action="Create"><h1>Register Now</h1></a>
+                </div>
+        </div>
+        </div>
+    </div>
+    <br /><br />
+    
+        <h1 style="font-family:fantasy;color:crimson;text-align:center;">Coupons & Offers</h1>
+    <br /><br />
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+            <li data-target="#demo" data-slide-to="5"></li>
+            <li data-target="#demo" data-slide-to="6"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/amazon_home_20210412.jpg" alt="Coupons & Offers" style="width:100%;height:250px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/Home_Paytm_20210519.jpg" alt="Coupons & Offers" style="width:100%;height:250px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/Home_airtel_30082020.jpg" alt="Coupons & Offers" style="width:100%;height:250px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/Home_Freecharge_20210405.jpg" alt="Coupons & Offers" style="width:100%;height:250px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/Dominos_Mobi_Home_20210503.jpg" alt="Coupons & Offers" style="width:100%;height:250px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/Home_payzapp_20201029.jpg" alt="Coupons & Offers" style="width:100%;height:250px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/Home_au_20201029.jpg" alt="Coupons & Offers" style="width:100%;height:250px;">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+
+    <br/><br /><br/><br />
+
+    <h1><b>Meals for any occasion</b></h1>
+    <div class="card-columns">
+        <div class="card">
+            <img class="card-img-top" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_275,h_155/v1596660943/assets/2e/0602d9-1aa3-421d-bda0-d3b6018f11e9/original/put-lunch-on-your-tab.jpg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Improve customer satisfaction</h4>
+                <p class="card-text">Show your appreciation for their business with a voucher or an Uber Eats gift card they can use to get tasty treats delivered right to them.</p>
+            </div>    
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_275,h_155/v1601408893/assets/71/c030ef-76fb-445a-b24e-e36980162c9c/original/16_9_1.png" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Drive virtual event attendance</h4>
+                <p class="card-text">Engage customers during virtual conferences and meetings. Distribute vouchers to let them choose from local restaurants while you pick up the bill.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_275,h_155/v1596573918/assets/1f/9eb41a-3629-4d3e-ab6f-3e1221854571/original/incentivize-sales-prospects.jpg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Buy lunch for sales prospects</h4>
+                <p class="card-text">Cover the cost of lunch by sending vouchers to your top sales prospects. Food always helps to get the conversation started. Enjoy your food.</p>
+            </div>
+        </div>
+    </div>
+
+    <br /><br /><br /><br />
+    <h1><b>We make it easy for you to keep everyone safe and satisfied</b></h1>
+    <div class="row">
+        <div class="col-4">
+            <img src="https://media.istockphoto.com/vectors/gloves-icon-vector-id900746916?s=612x612" style="width:100px;height:100px;"/>
+            <h4>Safety is a top priority</h4>
+            <p>From a no-contact delivery option to COVID-19 checklists for drivers and riders, we’ve taken steps to help users stay safe.</p>
+        </div>
+        <div class="col-4">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn2vogGuYiEg_HRkexdnuY7RmOsW1g0Z5K4FMVbt2ifTQejiKJ" style="width:100px;height:100px;" />
+            <h4>Wide variety of reliable meal options</h4>
+            <p>Pad Thai. Pizza. Salads. Burritos. Let employees and customers order from over 780,000 restaurants, while you control budgets and policies.</p>
+        </div>
+        <div class="col-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkmCUzb6mMiypCxZ58IXGs1H-nQQ_cfo2VonnCt2VB&s" />
+            <h4>Business policies and controls</h4>
+            <p>When you treat clients, guests, or employees to meals, you can set rules and limits to control costs.</p>
+        </div>
+        
+    </div>
+
+
+<br />
+<br />
+<br />
+</body>
+</html>
+<br />
+<br />
+

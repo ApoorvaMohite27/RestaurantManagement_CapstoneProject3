@@ -1,0 +1,29 @@
+﻿@model IEnumerable<RestaurantManagement.Models.Item>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Items</h1>
+
+
+<div class="card-columns">
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <div class="card-header">
+                @item.ItemName
+            </div>
+            <div class="card-body">
+                @Html.DisplayNameFor(modelItem => item.Category.CategoryName) : @item.Category.CategoryName
+                <br />
+                @Html.DisplayNameFor(modelItem => item.ItemPrice) : @item.ItemPrice
+            </div>
+            <div class="card-footer">
+                <a class="btn btn-sm btn-primary" asp-area="RestaurantMgmt" asp-controller="CustomerOrderDetails" asp-action="Create" asp-route-id="@item.ItemId">BUY NOW</a>
+            </div>
+        </div>
+    }
+</div>
+
+<a asp-area="Demo" asp-controller="Home" asp-action="Menu">Go Back</a>

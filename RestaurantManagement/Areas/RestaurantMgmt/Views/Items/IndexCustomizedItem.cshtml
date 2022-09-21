@@ -1,0 +1,41 @@
+﻿@model IEnumerable<RestaurantManagement.Models.Item>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="text-align:center">MENU CARD</h1>
+<a class="btn btn-link float-md-right" asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuCardByPriceOrder">FilterByPrice</a>
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemPrice)
+            </th>
+            
+            @*<th></th>*@
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemPrice)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<a asp-area="RestaurantMgmt" asp-controller="Categories" asp-action="Index">List of Categories</a>

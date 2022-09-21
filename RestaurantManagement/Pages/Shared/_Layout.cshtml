@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RestaurantManagement</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    @RenderSection("HeadScripts",required:false)
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-info border-bottom box-shadow mb-3">
+            <div class="container">
+            
+                <a class="navbar-brand"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4CrUkQqNZ5A4K0_1H07pe8TxV0Q6y-chSlA&usqp=CAU" alt=logo style="width:100px;height:70px;"></a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index"><b>PizzaHut</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index"><b>Home</b></a>
+                        </li>
+                        <li>
+                        <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><b>Menu</b></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://localhost:44367/Demo/Home/Menu">MENU</a>
+                                <a class="dropdown-item" href="https://localhost:44367/Demo/Home/DisplayListOfVegPizza">VEG PIZZA</a>
+                                <a class="dropdown-item" href="https://localhost:44367/Demo/Home/DisplayListOfNonVegPizza">NON-VEG PIZZA</a>
+                                <a class="dropdown-item" href="https://localhost:44367/Demo/Home/DisplayListOfPizzaMania">PIZZA MANIA</a>
+                                <a class="dropdown-item" href="https://localhost:44367/Demo/Home/DisplayListOfSidesBeverages">SIDES & BEVERAGES</a>
+                                <a class="dropdown-item" href="https://localhost:44367/Demo/Home/DisplayListOfPasta">PASTA</a>
+                            </div>
+                        </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuCard"><b>Menu Card</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://localhost:44367/RestaurantMgmt/ShowOrders"><b>Order Details</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="RestaurantMgmt" asp-controller="Customers" asp-action="Create"><b>Registration</b></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><b>Admin</b></button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" asp-area="RestaurantMgmt" asp-controller="Categories" asp-action="Index">Category</a>
+                        <a class="dropdown-item" asp-area="RestaurantMgmt" asp-controller="Items" asp-action="Index">Item</a>
+                        <a class="dropdown-item" asp-area="RestaurantMgmt" asp-controller="CustomerOrderDetails" asp-action="DisplayForAdmin">Order List</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted text-black-50">
+            &copy; 2022 - RestaurantManagement - <a asp-area="" asp-page="/Privacy">Privacy</a>
+
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

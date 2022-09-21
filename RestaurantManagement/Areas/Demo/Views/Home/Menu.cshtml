@@ -1,0 +1,187 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+    <h1 style="color:crimson;text-align:center;"><b>Our Menu</b></h1><br><br />
+
+    <br /><br />
+<div class="card-columns" style="text-align:center;align-content:center;color:crimson;">
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <h4>VEG PIZZA</h4>
+        <img class="card-img-top" src="https://www.dominos.co.in/theme2/front/images/menu-images/my-vegpizza.webp" alt="CHICKEN GOLDEN DELIGHT" style="width:300px;height:300px;">
+
+        <p>A delight for veggie lovers! Choose from our wide range of delicious vegetarian pizzas, it's softer and tastier</p><br />
+        <button class="btn bg-white"><a asp-area="Demo" asp-controller="Home" asp-action="DisplayListOfVegPizza">VIEW ALL</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <h4>NON-VEG PIZZA</h4>
+        <img class="card-img-top" src="https://www.dominos.co.in/theme2/front/images/menu-images/my-nonveg.webp" alt="CHICKEN GOLDEN DELIGHT" style="width:300px;height:300px;">
+
+        <p>A delight for veggie lovers! Choose from our wide range of delicious vegetarian pizzas, it's softer and tastier</p><br />
+        <button class="btn bg-white"><a asp-area="Demo" asp-controller="Home" asp-action="DisplayListOfNonVegPizza">VIEW ALL</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <h4>PIZZA MANIA</h4>
+        <img class="card-img-top" src="https://www.dominos.co.in/theme2/front/images/menu-images/my-pizzamania.webp" alt="CHICKEN GOLDEN DELIGHT" style="width:300px;height:300px;">
+
+        <p>A delight for veggie lovers! Choose from our wide range of delicious vegetarian pizzas, it's softer and tastier</p><br />
+        <button class="btn bg-white"><a asp-area="Demo" asp-controller="Home" asp-action="DisplayListOfPizzaMania">VIEW ALL</a></button><br />
+        <p></p><br />
+    </div>
+</div>
+    <br />
+    <br />
+    <br />
+<div class="card-columns" style="text-align:center;align-content:center;color:crimson;">
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <h4>SIDES & BEVERAGES</h4>
+        <img class="card-img-top" src="https://www.dominos.co.in/theme2/front/images/menu-images/sides_beverages.webp" alt="CHICKEN GOLDEN DELIGHT" style="width:300px;height:300px;">
+
+        <p>Complement your pizza with wide range of sides & beverages available at Domino's Pizza India</p><br /><br />
+        <button class="btn bg-white"><a asp-area="Demo" asp-controller="Home" asp-action="DisplayListOfSidesBeverages">VIEW ALL</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <h4>PASTA</h4>
+        <img class="card-img-top" src="https://www.dominos.co.in/theme2/front/images/menu-images/pasta_new.webp" alt="CHICKEN GOLDEN DELIGHT" style="width:300px;height:300px;">
+
+        <p>Choose your favourite pizza pasta from the Domino's pasta menu. Get fresh non-veg pasta with your choice with creamy tomato, tikka masala, cheesy jalapeno and more.</p>
+        <button class="btn bg-white"><a asp-area="Demo" asp-controller="Home" asp-action="DisplayListOfPasta">VIEW ALL</a></button><br />
+        <p></p><br />
+    </div>
+</div>
+    <br />
+    <br />
+    <br />
+    <h1 style="color:gray">FAQ - PEOPLE ALSO ASK</h1>
+@*    <div class="jumbotron">
+    <div class="btn-group-vertical">
+        <button data-toggle="collapse" data-target="#demo1" class="btn w-100">What is Our's best menu?</button>
+        <div id="demo1" class="collapse">
+            If you’re a vegetarian, you’ll love Domino’s Veg Extravaganza, Indi Tandoori Paneer, and Mexican Green Wave. For non-vegetarians, Non-Veg Supreme, Chicken Fiesta, and Indi Chicken Tikka top the list. Though these are the most loved Domino’s pizzas along with the cheesy Margherita pizza, you should check out the our menu to see what you like the most.
+        </div>
+        <button data-toggle="collapse" data-target="#demo2" class="btn w-100">What is Our's perfect combo deal?</button>
+        <div id="demo2" class="collapse">
+            A quick look at Domino’s menu card will show you the range of combo deals available. Though the final combo selection will depend on your individual taste, you should definitely try the Domino’s party combo. It is available in both veg and non-veg range. Each contains 4 pizza varieties, a side dish, and a beverage. You can check our menu for more information.
+        </div>
+        <button data-toggle="collapse" data-target="#demo3" class="btn w-100">What is the best in Our’s order?</button>
+        <div id="demo3" class="collapse">
+            If you’re a cheese lover, a medium or large Margherita pizza with stuffed garlic bread will do complete justice to your taste buds. However, if you’re in for a heavy, filling pizza, go ahead with a large Peppy Paneer pizza, Veggie Paradise pizza, or a Cheese & Corn pizza. Non-vegetarians would love a piping hot Large Chicken Sausage pizza, Chicken Pepperoni pizza, or a Chicken Dominator pizza. Our pizza menu has many more options, though, that deserve your attention.
+        </div>
+            <button data-toggle="collapse" data-target="#demo4" class="btn w-100">What are the names of Pizza?</button>
+        <div id="demo4" class="collapse">
+            You can find an enticing range of vegetarian and non-vegetarian pizzas at all our outlets. Some of the top from the menu include the Margherita, Farmhouse, Chicken Fiesta, Non-Veg Supreme, etc.
+        </div>
+            <button data-toggle="collapse" data-target="#demo5" class="btn w-100">What is the most famous pizza?</button>
+        <div id="demo5" class="collapse">
+            Some of the most famous pizzas you should try from our menu include the cheesy Margherita, Indi Tandoori Paneer, Pepper Barbecue & Onion, Chicken Dominator, and the Indi ChickenTikka.
+        </div>
+            <button data-toggle="collapse" data-target="#demo6" class="btn w-100">How many Flavours of pizza are there?</button>
+        <div id="demo6" class="collapse">
+            If you like variety, you will love Domino’s. We offer over ten varieties of pizzas in both the veg and non-veg range. Check out the full menu to know more.
+        </div>
+            <button data-toggle="collapse" data-target="#demo7" class="btn w-100">Which Pizza is best in taste?</button>
+        <div id="demo7" class="collapse">
+            Everyone has different taste preferences, so you might want to check our full menu to see what appeals to you the most. Every pizza mentioned in the list is equally delicious.
+        </div>
+    </div>
+    </div>*@
+
+
+<div id="accordion">
+    <div class="card">
+        <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                What is Our's best menu?
+            </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+            <div class="card-body">
+                If you’re a vegetarian, you’ll love Domino’s Veg Extravaganza, Indi Tandoori Paneer, and Mexican Green Wave. For non-vegetarians, Non-Veg Supreme, Chicken Fiesta, and Indi Chicken Tikka top the list. Though these are the most loved Domino’s pizzas along with the cheesy Margherita pizza, you should check out the our menu to see what you like the most.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                What is Our's perfect combo deal?
+            </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                A quick look at menu card will show you the range of combo deals available. Though the final combo selection will depend on your individual taste, you should definitely try the Domino’s party combo. It is available in both veg and non-veg range. Each contains 4 pizza varieties, a side dish, and a beverage. You can check our menu for more information.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                What is the best in Our’s order?
+            </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                If you’re a cheese lover, a medium or large Margherita pizza with stuffed garlic bread will do complete justice to your taste buds. However, if you’re in for a heavy, filling pizza, go ahead with a large Peppy Paneer pizza, Veggie Paradise pizza, or a Cheese & Corn pizza. Non-vegetarians would love a piping hot Large Chicken Sausage pizza, Chicken Pepperoni pizza, or a Chicken Dominator pizza. Our pizza menu has many more options, though, that deserve your attention.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                What are the names of Pizza?
+            </a>
+        </div>
+        <div id="collapseFour" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                You can find an enticing range of vegetarian and non-vegetarian pizzas at all our outlets. Some of the top from the menu include the Margherita, Farmhouse, Chicken Fiesta, Non-Veg Supreme, etc.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                What is the most famous pizza?
+            </a>
+        </div>
+        <div id="collapseFive" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                Some of the most famous pizzas you should try from our menu include the cheesy Margherita, Indi Tandoori Paneer, Pepper Barbecue & Onion, Chicken Dominator, and the Indi ChickenTikka.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+                How many Flavours of pizza are there?
+            </a>
+        </div>
+        <div id="collapseSix" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                If you like variety, you will love Domino’s. We offer over ten varieties of pizzas in both the veg and non-veg range. Check out the full menu to know more.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+                Which Pizza is best in taste?
+            </a>
+        </div>
+        <div id="collapseSeven" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                Everyone has different taste preferences, so you might want to check our full menu to see what appeals to you the most. Every pizza mentioned in the list is equally delicious.
+            </div>
+        </div>
+    </div>
+</div>
+</div>

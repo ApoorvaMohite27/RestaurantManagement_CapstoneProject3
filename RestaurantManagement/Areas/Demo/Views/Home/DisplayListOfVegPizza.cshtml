@@ -1,0 +1,145 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1 style="text-align:center">VEG PIZZA</h1>
+
+<div class="card-columns" style="text-align:center">
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/Margherit.jpg" alt="MARGHERITA" style="width:200px;height:200px;">
+        <h4>MARGHERITA</h4>
+        <p>A hugely popular margherita, with a deliciously tangy single cheese topping</p><br /><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="1">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card text-white" style="background-color:#C70003">
+        <br /><br />
+        <img class=card-img-top src="https://www.dominos.co.in/files/items/Double_Cheese_Margherita.jpg" alt="DOUBLE CHEESE MARGHERITA" style="width:200px;height:200px;">
+        <h4>DOUBLE CHEESE MARGHERITA</h4>
+        <p>The ever-popular Margherita - loaded with extra cheese... oodies of it!</p><br /><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="2">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <img class=card-img-top src="https://www.dominos.co.in/files/items/Farmhouse.jpg" alt="FARM HOUSE" style="width:200px;height:200px;">
+        <h4>FARM HOUSE</h4>
+        <p>A pizza that goes ballistic on veggies! Check out this mouth watering overload of crunchy, crisp capsicum, succulent mushrooms and fresh tomatoes</p>
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="3">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+</div>
+<br /><br />
+<div class="card-columns" style="text-align:center">
+    <div class="card text-white" style="background-color:#C70003">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/Peppy_Paneer.jpg" alt="PEPPY PANEER" style="width:200px;height:200px;">
+        <h4>PEPPY PANEER</h4>
+        <p>Chunky paneer with crisp capsicum and spicy red pepper - quite a mouthful!</p><br /><br /><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="4">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <img class=card-img-top src="https://www.dominos.co.in/files/items/Mexican_Green_Wave.jpg" alt="MEXICAN GREEN WAVE" style="width:200px;height:200px;">
+        <h4>MEXICAN GREEN WAVE</h4>
+        <p>A pizza loaded with crunchy onions, crisp capsicum, juicy tomatoes and jalapeno with a liberal sprinkling of exotic Mexican herbs.</p><br /><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="5">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card text-white" style="background-color:#C70003">
+        <br /><br />
+        <img class=card-img-top src="https://www.dominos.co.in/files/items/Deluxe_Veggie.jpg" alt="DELUXE VEGGIE" style="width:200px;height:200px;">
+        <h4>DELUXE VEGGIE</h4>
+        <p>For a vegetarian looking for a BIG treat that goes easy on the spices, this one's got it all.. The onions, the capsicum, those delectable mushrooms - with paneer and golden corn to top it all.</p>
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="6">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+</div>
+<br><br />
+<div class="card-columns" style="text-align:center">
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/Veg_Extravaganz.jpg" alt="VEG EXTRAVAGANZA" style="width:200px;height:200px;">
+        <h4>VEG EXTRAVAGANZA</h4>
+        <p>A hugely popular margherita, with a deliciously tangy single cheese topping</p>
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="7">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card text-white" style="background-color:#C70003">
+        <br /><br />
+        <img class=card-img-top src="https://www.dominos.co.in/files/items/Corn_&_Cheese.jpg" alt="CHEESE N CORN" style="width:200px;height:200px;">
+        <h4>CHEESE N CORN</h4>
+        <p>Cheese I Golden Corn | Cheese n Corn Pizza</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="8">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <img class=card-img-top src="https://www.dominos.co.in/files/items/Fresh_Veggie.jpg" alt="FRESH VEGGIE" style="width:200px;height:200px;">
+        <h4>FRESH VEGGIE</h4>
+        <p>Onion & Capsicum</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="9">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+</div>
+<br />
+<br />
+<div class="card-columns" style="text-align:center">
+    <div class="card text-white" style="background-color:#C70003">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/Digital_Veggie_Paradise_olo_266x265.jpg" alt="VEGGIE PARADISE" style="width:200px;height:200px;">
+        <h4>VEGGIE PARADISE</h4>
+        <p>Goldern Corn, Black Olives, Capsicum & Red Paprika</p>
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="10">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <img class=card-img-top src="https://www.dominos.co.in/files/items/Paneer_Makhni.jpg" alt="MEXICAN GREEN WAVE" style="width:200px;height:200px;">
+        <h4>PANEER MAKHANI</h4>
+        <p>Paneer and Capsicum on Makhani Sauce</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="11">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card text-white" style="background-color:#C70003">
+        <br /><br />
+        <img class=card-img-top src="https://www.dominos.co.in/files/items/IndianTandooriPaneer.jpg" alt="INDI TANDOORI PANEER" style="width:200px;height:200px;">
+        <h4>INDI TANDOORI PANEER</h4>
+        <p>It is hot. It is spicy. It is oh-so-Indian. Tandoori paneer with capsicum I red paprika I mint mayo</p>
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="12">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+</div>
+<br>
+<br />
+<div class="card-columns" style="text-align:center">
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/MoroccanSpicePPVG_N.jpg" alt="MOROCCAN SPICE PASTA PIZZA" style="width:200px;height:200px;">
+        <h4>MOROCCAN SPICE PASTA PIZZA</h4>
+        <p>A pizza loaded with a spicy combination of Harissa sauce and delicious pasta.</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="13">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card text-white" style="background-color:#C70003">
+        <br /><br />
+        <img class=card-img-top src="https://www.dominos.co.in/files/items/updated_achari_do_pyaza.webp" alt="ACHARI DO PYAZA" style="width:200px;height:200px;">
+        <h4>ACHARI DO PYAZA</h4>
+        <p>Tangy & spicy achari flavours on a super cheesy onion pizza- as desi as it gets!</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="14">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-danger text-white">
+        <br /><br />
+        <img class=card-img-top src="https://www.dominos.co.in/files/items/PIZ0171.jpg" alt="THE 4 CHEESE PIZZA" style="width:200px;height:200px;">
+        <h4>THE 4 CHEESE PIZZA</h4>
+        <p>Cheese Overloaded pizza with 4 different varieties of cheese and 4 times the cheese of a normal pizza, including a spicy hit of Ghost</p>
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="15">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+</div>

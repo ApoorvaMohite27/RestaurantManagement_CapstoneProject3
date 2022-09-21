@@ -1,0 +1,115 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<h1 style="text-align:center;">PIZZA MANIA</h1>
+
+<div class="card-columns" style="text-align:center">
+    <div class="card bg-warning text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/PrimeLoadedL.jpg" alt="VEG LOADED" style="width:200px;height:200px;">
+        <h4>VEG LOADED</h4>
+        <p>Tomato | Grilled Mushroom |Jalapeno |Golden Corn | Beans in a fresh pan crust</p>
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="28">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-dark text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/PrimeCheesyL.jpg" alt="CHEESY" style="width:200px;height:200px;">
+        <h4>CHEESY</h4>
+        <p>Orange Cheddar Cheese I Mozzarella</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="29">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-warning text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/Paneer_Special.jpg" alt="PANEER & ONION" style="width:200px;height:200px;">
+        <h4>PANEER & ONION</h4>
+        <p>Creamy Paneer I Onion</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="30">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+</div>
+<br />
+<br />
+
+<div class="card-columns" style="text-align:center">
+    <div class="card bg-dark text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/CapsicumVeg.jpg" alt="CAPSICUM" style="width:200px;height:200px;">
+        <h4>CAPSICUM</h4>
+        <p>Capsicum</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="31">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-warning text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/onion_veg.jpg" alt="ONION" style="width:200px;height:200px;">
+        <h4>ONION</h4>
+        <p>Onion</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="32">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-dark text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/golden_corn_veg.jpg" alt="GOLDEN CORN" style="width:200px;height:200px;">
+        <h4>GOLDEN CORN</h4>
+        <p>Golden Corn - Sweet Corn Pizza</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="33">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+</div>
+<br />
+<br />
+
+<div class="card-columns" style="text-align:center">
+    <div class="card bg-warning text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/cheese_and_tomato.png" alt="CHEESE N TOMATO" style="width:200px;height:200px;">
+        <h4>CHEESE N TOMATO</h4>
+        <p>A delectable combination of cheese and juicy tomato</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="34">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-dark text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/pizza_mania_tomato.png" alt="TOMATO" style="width:200px;height:200px;">
+        <h4>TOMATO</h4>
+        <p>Juicy tomato in a flavourful combination with cheese I tangy sauce</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="35">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-warning text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/LoadedC.jpg" alt="NON VEG LOADED" style="width:200px;height:200px;">
+        <h4>NON VEG LOADED</h4>
+        <p>Peri - Peri chicken | Pepper Barbecue | Chicken Sausage in a fresh pan crust</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="36">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+</div>
+<br />
+<br />
+
+<div class="card-columns" style="text-align:center">
+    <div class="card bg-dark text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/MicrosoftTeams-image_(17).png" alt="CHICKEN SAUSAGE" style="width:200px;height:200px;">
+        <h4>CHICKEN SAUSAGE</h4>
+        <p>Chicken Sausage & Cheese</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="21">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+    <div class="card bg-warning text-white">
+        <br /><br />
+        <img class="card-img-top" src="https://www.dominos.co.in/files/items/PepperBarbecueChicken.jpg" alt="Chicken Sausage & Cheese" style="width:200px;height:200px;">
+        <h4>Chicken Sausage & Cheese</h4>
+        <p>Pepper Barbecue Chicken</p><br />
+        <button class="btn bg-white"><a asp-area="RestaurantMgmt" asp-controller="Items" asp-action="GetMenuOfItemCategory" asp-route-filterItemId="37">ORDER NOW</a></button><br />
+        <p></p><br />
+    </div>
+</div>
+<br />
+<br />

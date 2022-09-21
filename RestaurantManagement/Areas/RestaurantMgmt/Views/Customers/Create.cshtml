@@ -1,0 +1,87 @@
+﻿@model RestaurantManagement.Models.Customer
+
+@{
+    ViewData["Title"] = "Create";
+    
+}
+
+
+<body style="background-image: url('https://png.pngtree.com/background/20210710/original/pngtree-fancy-coffee-background-material-picture-image_1026969.jpg');
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: 100% 100%;
+             align-content:center;">
+
+   
+<h1 style="text-align:center;color:white">Customer Registration Form</h1>
+
+<h1 style="color:white;">Create</h1>
+
+<h4 style="color:white;">New Customer</h4>
+<hr />
+<div class="row" style="align-content:center;color:white">
+    <div class="col-md-4" style="align-content:center;color:white">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CustomerName" class="control-label"></label>
+                <input asp-for="CustomerName" class="form-control" />
+                <span asp-validation-for="CustomerName" class="text-danger"></span>
+            </div>
+                <div class="form-group">
+                    <label asp-for="DOB" class="control-label"></label>
+                    <input type="text" asp-for="DOB" class="form-control" />
+                     
+                    <span asp-validation-for="DOB" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Gender" class="control-label"></label> 
+                    Male
+                    @Html.RadioButtonFor(model => model.Gender, "Male")
+                    Female
+                    @Html.RadioButtonFor(model => model.Gender, "Female")
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+            <div class="form-group">
+                <label asp-for="EmailId" class="control-label"></label>
+                <input asp-for="EmailId" class="form-control" />
+                <span asp-validation-for="EmailId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MobileNumber" class="control-label"></label>
+                <input asp-for="MobileNumber" class="form-control" />
+                <span asp-validation-for="MobileNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+</body>
+
+@section HeadScripts{
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="//code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="//code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#DOB").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                showButtonPanel: true,
+                dateFormat: 'yyyy-mm-dd ',
+                maxDate: '0'
+            });
+        });
+    </script>
+}
